@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+
+                   /* Home - Banner */
+
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../img/banner-oleo2.png);
+    background-size: cover;
+}
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h1{
+    font-size: 5EM;
+    color: #fff;
+    text-shadow: 1px 1px 15px rgb(15, 15, 15);
+    letter-spacing: 3px;
+}
+
+.banner .content p{
+    margin: 10px;
+    font-size: 1EM;
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+}
+
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: green;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border: 1px solid rgba(245, 245, 245, 0.274);
+    border-radius: 5px;
+    box-shadow: 1px 1px 40px rgba(158, 158, 158, 0.507)
+}
+
+.btn:hover{
+    letter-spacing: 6px;
+}
+
+
+                   /* Header - Menu de nav. */
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+
+}
+
+header.descer{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05)
+}
+
+header.descer .logo{
+    color: #111;
+}
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header .logo span{
+    color: green;
+}
+
+header .nav{
+    position: relative;
+    display: flex;
+}
+
+header .nav li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .nav li a{
+    text-decoration: none;
+    text-shadow: 1px 0 1px black;
+    color: #fff;
+    font-weight: 300;
+}
+
+header.descer .nav li a{
+    color: #111;
+}
+
+header .nav li a:hover{
+    color: green;
+}
+
+                   /* Quem somos */
+
+section{
+    padding: 100px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50{
+    position: relative;
+    width: 48%;
+}
+
+.tituloTexto{
+  color: #111;
+  font: 2em;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.tituloTexto span{
+    color: green;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col50 .imgbx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.row .col50 .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+                   /* Coleta de Óleo */
+
+.coletaoleo{
+    background: black;
+}
+
+.row2{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row2 .col60{
+    position: relative;
+    width: 48%;
+}
+
+.row2 .col60 .tituloTexto{
+  color: rgb(255, 255, 255);
+  font: 2em;
+  font-weight: 300;  
+  text-shadow: 1px 1px 1px white;
+}
+
+.row2 .col60 .imgbx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.row2 .col60 .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.col60 .tituloTexto{
+    color: white;
+}
+
+.col60 p{
+    color: white;
+}
+
+.titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+                   /* Informações */
+
+.infos{
+    background: rgb(219, 219, 219);
+}
+
+.infos .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.infos .content .caixa{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infos .content .caixa .imgbx{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.infos .content .caixa .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto{
+    text-align: center;
+}
+
+.infos .content .caixa .texto p{
+    color: #666;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.infos .content .caixa .texto h3{
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
+}
+
+                   /* Contato */
+
+.contact{
+    background:url(../img/oil-hands.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contatoForm{
+    padding: 75px 50px;
+    background: rgba(255, 255, 255, 0.137);
+    box-shadow: 0 15px 50px rgb(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.contatoForm h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contatoForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contatoForm .inputBox input,
+.contatoForm .inputBox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.inputBox input[type="submit"]{
+    font-size: 1em;
+    color: white;
+    background: green;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border:1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 1px 5px black;
+    transition: 0.5s;
+}
+
+.inputBox input[type="submit"]:hover{
+    background: rgb(65, 126, 65);
+}
+
+                   /* Footer */
+
+.copyrightTexto{
+    padding: 8px 40px;
+    border-top: 3px solid rgba(207, 204, 204, 0.1);
+    text-align: center;
+    background-color:#2c2c2b
+}
+
+.copyrightTexto  p{
+    color: rgb(255, 254, 254);
+}
+
+.copyrightTexto a{
+    color: rgb(10, 175, 32);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+                   /* Whatsapp */
+
+.wpp{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.wpp a img{
+    height: 60px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+
+
+
+                   /* Responsivo  */
+
+
+
+@media(max-width: 1080px){
+
+                   /* Menu  */
+
+    header,
+    header.descer{
+        padding: 18px 20px;
+    }
+
+    header .nav{
+        display: none;
+    }
+
+    header .nav.active{
+        width: 100%;
+        height: calc(100% - 65px);
+        position: fixed;
+        top: 65px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    header .nav li{
+        margin-left: 0;
+    }
+
+    header .nav li a{
+        color:rgb(0, 0, 0);
+        font-size: 1.6em;
+    }
+
+    
+
+    .menuBarra{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background:url(../img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .menuBarra.active{
+        background:url(../img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    header.descer .menuBarra{
+        filter: invert(1);
+    }
+
+                   /* Quem Somos  */
+
+    section{
+        padding: 20px;
+     }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .row .col50{
+        position: relative;
+        width: 100%;
+    }
+
+    .row .col50 .imgbx{
+        height: 500px;
+        margin-top: 20px;
+    }
+
+                   /* Coleta de Óleo  */
+
+    .row2{
+        flex-direction: column;
+    }
+
+    .row2 .col60{
+        position: relative;
+        width: 100%;
+    }
+
+    .row2 .col60 .imgbx{
+        height: 700px;
+        margin-top: 20px;
+    }
+    
+    .row2 .col60 .imgbx img{
+        object-fit: cover;
+    }
+
+}
+
+
+                   /* Celular */
+
+
+@media(max-width: 500px){
+
+                   /* Coleta de Óleo  */
+
+    .row2{
+        flex-direction: column;
+    }
+
+    .row2 .col60{
+        position: relative;
+        width: 100%;
+    }
+
+    .row2 .col60 .imgbx{
+        height: 320px;
+        margin-top: 20px;
+    }
+    
+    .row2 .col60 .imgbx img{
+        object-fit: cover;
+    }
+}
