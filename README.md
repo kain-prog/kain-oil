@@ -1,3 +1,3 @@
 # Kain-oil
 My first real project<br>
-link: kain-prog/kain-oil
+link: https://kain-prog.github.io/kain-oil/
