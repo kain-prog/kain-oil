@@ -498,6 +498,15 @@ section{
 
 
 @media(max-width: 500px){
+    
+                          /*Banner */
+    
+    .banner .content h1 {
+        font-size: 4EM;
+        color: #fff;
+        text-shadow: 1px 1px 15px rgb(15 15 15);
+        letter-spacing: 3px;
+    }
 
                    /* Coleta de Óleo  */
 
